@@ -1,5 +1,9 @@
 /* FONTS CSS font-family: 'Roboto Slab', serif;
  font-family: 'Raleway', sans-serif; */
+
+
+
+
 * body {
   margin: 0 auto;
 }
@@ -45,6 +49,9 @@ a:hover {
 p, li {
   font-weight: 300;
   font-size: 1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
 }
 
 hr {
@@ -135,6 +142,7 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  margin-top: 10px;
 }
 
 .bt:hover {
@@ -147,6 +155,7 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  margin-top: 10px;
 }
 
 .bt-iniciacao:hover {
@@ -161,6 +170,7 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  margin-top: 10px;
 }
 
 .bt-escola:hover {
@@ -178,6 +188,7 @@ ul {
   margin-top: 5px;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  margin-top: 10px;
 }
 
 .bt-preco-escola:hover {
@@ -500,10 +511,73 @@ ul {
   margin-bottom: 60px;
 }
 
+.title-pg h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+
+
 /* SOBRE SECTION */
 .sobre-1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sobre-img {
+  width: 49%;
+}
+
+.sobre-img2 {
+  width: 32%;
+}
+
+.sobre-1 img{
+width: 100%;
+}
+.sobre-img-2{
+  text-align: right;
+}
+
+.team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-card{
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 47%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.team-card-items{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.team-photo {
+  width: 39%;
+}
+
+.team-photo img{
+  width: 100%
+}
+
+.team-desc{
+  width: 57%;
+}
+
+.team-desc h3{
+  margin-top: 5%;
 }
 
 /* CURSOS SECTION */
