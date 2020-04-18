@@ -3,14 +3,14 @@ $(document).ready(function(){
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         arrows: false,
         dots: false,
         pauseOnHover: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 5
             }
         }, {
             breakpoint: 520,
