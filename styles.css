@@ -284,7 +284,7 @@ ul {
 
 /* MENU */
 .logo {
-  width: 180px;
+  width: 200px;
 }
 
 .navbar {
@@ -726,6 +726,21 @@ ul {
   text-align: center;
 }
 
+.bg-video-workshops {
+  background: #085586;
+  text-align: center;
+}
+
+.bg-video-bonsaikids {
+  background: #F2BE1A;
+  text-align: center;
+}
+
+.bg-video-business {
+  background: #414042;
+  text-align: center;
+}
+
 .main-video {
   margin: 0 auto;
   max-width: 1024px;
@@ -792,6 +807,7 @@ ul {
 }
 
 .c-cards-items {
+  position: relative;
   width: 290px;
   margin: 0 10 30px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -801,6 +817,43 @@ ul {
 
 .c-cards-items img {
   width: 100%;
+}
+
+.c-cards-date {
+  position: absolute;
+  z-index: 1;
+  left: -5px;
+  top: 50px;
+  display: block;
+  height: 57px;
+}
+
+.shadow{
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.c-cards-date img{
+  width: 5px;
+  height: 5px;
+  text-align:
+
+}
+
+.c-cards-date-day {
+  display: block;
+  background-color: #197D36;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 1px;
+  text-transform: uppercase;
+}
+
+.c-cards-date-date {
+  display: block;
+  font-size: 14px;
+  padding: 4px 10px;
+  background-color: #fff;
 }
 
 .c-card-content {
@@ -935,10 +988,11 @@ ul {
 }
 
 @media only screen and (max-width: 425px) {
-  .row{
+  .row {
     margin-right: 0px;
     margin-left: 0px;
   }
+
   .col-sm-auto {
     width: 80%;
     margin: 0 auto;
