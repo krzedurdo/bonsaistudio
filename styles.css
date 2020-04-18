@@ -1,9 +1,5 @@
 /* FONTS CSS font-family: 'Roboto Slab', serif;
  font-family: 'Raleway', sans-serif; */
-
-
-
-
 * body {
   margin: 0 auto;
 }
@@ -17,7 +13,7 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3, p, li, a {
+h1, h2, h3, h4, p, li, a {
   font-family: 'Raleway';
   color: #414042;
 }
@@ -28,13 +24,20 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
 }
 
 h3 {
   font-size: 1.2em;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
 a {
@@ -51,7 +54,6 @@ p, li {
   font-size: 1em;
   margin-block-start: 0;
   margin-block-end: 0;
-
 }
 
 hr {
@@ -81,6 +83,7 @@ ul {
   margin-right: -2; */
   background-repeat: no-repeat;
   background-position: top;
+  padding-top: 100px;
 }
 
 .green {
@@ -90,7 +93,7 @@ ul {
   margin-right: -2; */
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 170px;
+  height: 145px;
 }
 
 .green2 {
@@ -125,16 +128,15 @@ ul {
 }
 
 /* BUTTONS */
-.test
-{
-    position:relative;
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: inline-block;
-    margin-top: -100px; /* whatever offset this needs to be */
+.test {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  margin-top: -100px;
+  /* whatever offset this needs to be */
 }
-
 
 .bt {
   display: inline-block;
@@ -223,12 +225,22 @@ ul {
 }
 
 /* GALERIA FOTOS */
+.js-chickendinner {
+  width: 100%;
+}
+
+.ir {
+  position: relative;
+  padding-bottom: 36%;
+  height: 0;
+}
+
 .carousel {
   margin: 0 auto;
   max-width: 1024;
 }
-.carousel2 {
 
+.carousel2 {
   max-width: 100%;
 }
 
@@ -241,7 +253,6 @@ ul {
 .carousel2 img {
   display: block;
   weight: 100%;
-
 }
 
 /* SECTION  */
@@ -255,16 +266,20 @@ ul {
   max-width: 1024px;
 }
 
-.space{
-  padding: 80 0;
+.space {
+  padding: 100 0;
 }
 
-.space-top{
-  padding-top: 80;
+.space-top {
+  padding-top: 100;
 }
 
-.space-bottom{
-  padding-bottom: 80;
+.space-bottom {
+  padding-bottom: 100;
+}
+
+.space-p {
+  padding-top: 30px;
 }
 
 /* MENU */
@@ -367,7 +382,6 @@ ul {
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  padding: 22% 0 6%;
 }
 
 .benefits-img {
@@ -379,7 +393,7 @@ ul {
 }
 
 .benefits-card {
-  padding-left: 50px;
+  padding-left: 40px;
   align-self: center;
   flex: 1 1 300px;
   margin: 20px 0;
@@ -444,22 +458,15 @@ ul {
 }
 
 /* EMPRESAS SECTION */
-
 .empresas h2 {
   text-align: center;
   padding-bottom: 50px;
 }
 
-.logos-empresas img {
-  width: 100px;
-  margin: 0 25px;
-  border-radius: 100%;
-}
-
-.logos-empresas {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* SECION CONVITE */
@@ -513,11 +520,8 @@ ul {
 
 .title-pg h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
-
-
-
 
 /* SOBRE SECTION */
 .sobre-1 {
@@ -535,29 +539,28 @@ ul {
   width: 32%;
 }
 
-.sobre-1 img{
-width: 100%;
+.sobre-1 img {
+  width: 100%;
 }
-.sobre-img-2{
+
+.sobre-img-2 {
   text-align: right;
 }
 
-.team{
+.team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.team-card{
+.team-card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 47%;
   background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-
+  flex: 1 1 250px;
+  margin: 10px;
 }
 
-.team-card-items{
+.team-card-items {
   display: flex;
   flex-wrap: wrap;
   padding: 15px;
@@ -568,15 +571,15 @@ width: 100%;
   width: 39%;
 }
 
-.team-photo img{
+.team-photo img {
   width: 100%
 }
 
-.team-desc{
+.team-desc {
   width: 57%;
 }
 
-.team-desc h3{
+.team-desc h3 {
   margin-top: 5%;
 }
 
@@ -597,7 +600,6 @@ width: 100%;
 /* .class1 {
   margin-top: 20px;
 } */
-
 .class ul {
   list-style: none;
   padding-inline-start: 0px;
@@ -605,15 +607,30 @@ width: 100%;
 }
 
 .class-box-main {
-  padding-right: 6%;
+  padding-right: 30%;
   margin: 0 7%;
   flex: 1;
   max-width: 285px;
   border-right: 2px solid white;
 }
 
+.class-box-main-i {
+  padding-right: 4%;
+  margin: 0 7% 0 0;
+  flex: 1;
+  max-width: 395px;
+  border-right: 2px solid white;
+}
+
 .class-box {
   padding: 20px 10px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 280px;
+  min-width: 240px;
+}
+
+.class-box-i {
   margin: 0 auto;
   text-align: center;
   max-width: 280px;
@@ -640,8 +657,31 @@ width: 100%;
   margin: 0 10 20;
 }
 
-.skills p {
+/* .skills p {
   font-weight: 600;
+} */
+.skill {
+  border-bottom: 2px solid white;
+}
+
+.skills-card p {
+  font-size: .9em
+}
+
+.skills-card {
+  display: flex;
+  margin-bottom: 60px;
+  /* width: 230px; */
+}
+
+.skills-card img {
+  fill: #197D36;
+  width: 50px;
+}
+
+.skill-desc {
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .curso-inclui {
@@ -805,28 +845,16 @@ width: 100%;
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 1024px) {
-  .main-c {
-    margin: 0 5%;
-  }
-
   .main {
-    margin: 60px 5%;
+    margin: 0 3%;
   }
 
   .green {
-    height: 115px;
-  }
-
-  p {
-    font-size: 0.9em;
-  }
-
-  li {
-    font-size: 0.9em;
+    height: 110px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   /* INTRO SECTION */
@@ -838,33 +866,27 @@ width: 100%;
     font-size: 0.9em;
   }
 
-  /* BENEFICTS SECTION */
-  .benefits-card {
-    padding-left: 50px;
-  }
-
-  /* CURSOS SECTION */
-  /* EMPRESAS SECTION */
-  .empresas h2 {
-    padding-top: 50px;
-  }
-
   /* CONVITE SECION */
-  /* .convite {
-    margin: 80px 0px;
-  } */
   .iframe-container {
     padding-bottom: 56.25%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .main-c {
-    margin: 0 5%;
+  .space {
+    padding: 60 0;
+  }
+
+  .space-top {
+    padding-top: 60;
+  }
+
+  .space-bottom {
+    padding-bottom: 60;
   }
 
   .green {
-    height: 90px;
+    height: 80px;
   }
 
   p {
@@ -872,7 +894,7 @@ width: 100%;
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
 
   h2 {
@@ -880,13 +902,11 @@ width: 100%;
   }
 
   .bt {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
-  /* INTRO SECTION */
-  .intro {
-    margin-top: 30px;
-    padding-bottom: 30px;
+  p, li {
+    font-size: .9em;
   }
 
   /* CURSOS SECION */
@@ -899,7 +919,7 @@ width: 100%;
   }
 
   .green2 {
-    height: 150px;
+    height: 120px;
   }
 
   /* EMPRESA SECION */
@@ -909,13 +929,32 @@ width: 100%;
 
   /* CONVITE SECION */
   .convite {
-    margin: 10% 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media only screen and (max-width: 425px) {
+  .row{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-sm-auto {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40;
+  }
+
+  .gray2 {
+    padding-top: 70px
+  }
+
+  .green {
+    height: 45px;
+  }
+
   .green2 {
-    height: 70px;
+    height: 100px;
   }
 
   /* HERO SECTION */
@@ -924,12 +963,12 @@ width: 100%;
   }
 
   .hero-title {
-    padding-right: 0px;
+    padding-top: 10px;
   }
 
   .hero-img img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .bt {
@@ -956,7 +995,6 @@ width: 100%;
   /* BENEFICIOS SECTION */
   .benefits {
     display: block;
-    padding: 120px 0px 10px;
   }
 
   .benefits-card {
@@ -965,7 +1003,7 @@ width: 100%;
 
   /* CURSOS SECTION */
   .cursos {
-    padding: 5% 0 15%
+    padding: 1% 0 15%
   }
 
   .cursos h1 {
@@ -988,7 +1026,6 @@ width: 100%;
   /* EMPRESA SECTION */
   .empresa {
     display: block;
-    padding-bottom: 50px;
   }
 
   .empresa-card {
@@ -996,14 +1033,10 @@ width: 100%;
     padding-top: 20px;
   }
 
-  /* EMPRESAS SECTION */
-  .empresas {
-    padding: 0 0 40px;
-  }
-
   /* PAGINAS INTERNAS */
   .desc-curos-card {
     padding-right: 0;
+    padding-bottom: 20px;
   }
 
   .skills {
@@ -1011,15 +1044,35 @@ width: 100%;
     padding-bottom: 60px;
   }
 
+  .skill {
+    border-bottom: 0;
+    padding-bottom: 0px;
+  }
+
   .class-box-main {
     border: 0;
     padding-right: 0;
   }
 
+  .class-box-main-i {
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin: 0 0;
+    flex: 0;
+    border-right: 0px;
+  }
+
   .content {
     text-align: center;
-    padding-top: 70;
+    padding-top: 60px;
     border-top: 2px solid white;
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+
+  .class {
+    margin: 20px auto 0;
+    padding-top: 50px;
+    border-top: 2px solid white;
   }
 }
