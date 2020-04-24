@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 h3 {
@@ -50,8 +50,8 @@ a:hover {
 }
 
 p, li {
-  font-weight: 300;
-  font-size: 1em;
+  font-weight: 400;
+  font-size: 1.1em;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -63,6 +63,15 @@ hr {
 
 ul {
   padding-inline-start: 20px;
+}
+
+.col-lg-4 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.col-lg-6 {
+  padding-right: 0px;
 }
 
 /* BACKGROUNDS DIAGONALS */
@@ -79,6 +88,7 @@ ul {
 .gray2 {
   background-image: url("images/bg_diag_up_gray_2.svg");
   margin-top: -3px;
+  position: relative;
   /* margin-left: -2;
   margin-right: -2; */
   background-repeat: no-repeat;
@@ -117,6 +127,11 @@ ul {
   padding-top: -170px;
 }
 
+.fundo {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+}
+
 /* TEXT-BOXES */
 .sub-title {
   padding-bottom: 60px;
@@ -144,7 +159,7 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .bt:hover {
@@ -157,7 +172,7 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .bt-iniciacao:hover {
@@ -172,13 +187,58 @@ ul {
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .bt-escola:hover {
   color: white;
   background-color: #C9252C;
   border: 1px solid #C9252C;
+}
+
+.bt-kids {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #414042;
+  padding: 4px 15px 4px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.bt-kids:hover {
+  color: white;
+  background-color: #F2BE1A;
+  border: 1px solid #F2BE1A;
+}
+
+.bt-oficina {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #414042;
+  padding: 4px 15px 4px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.bt-oficina:hover {
+  color: white;
+  background-color: #085586;
+  border: 1px solid #085586;
+}
+
+.bt-business {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #414042;
+  padding: 4px 15px 4px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.bt-business:hover {
+  color: white;
+  background-color: #414042;
+  border: 1px solid #414042;
 }
 
 .bt-preco-escola {
@@ -224,6 +284,120 @@ ul {
   color: white;
 }
 
+.tesoura {
+  position: absolute;
+  top: 10%;
+  width: 25%;
+  right: 0px;
+}
+
+.alicate {
+  position: absolute;
+  bottom: 15em;
+  width: 17%;
+  left: 0px;
+  z-index: -1;
+}
+
+.crayons {
+  position: absolute;
+  bottom: 15em;
+  width: 8%;
+  left: 0px;
+  z-index: -1;
+}
+
+.galho {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  right: 40;
+}
+
+.folha {
+  position: absolute;
+  top: 7%;
+  width: 7%;
+  right: 5%;
+  z-index: 100;
+}
+
+.folha-01 {
+  position: absolute;
+  top: 15%;
+  width: 10%;
+  right: 25%;
+  z-index: 100;
+}
+
+.folha-02 {
+  position: absolute;
+  bottom: 15%;
+  width: 6%;
+  left: 2%;
+  z-index: -1;
+}
+
+.notepad {
+  position: absolute;
+  width: 11%;
+  left: 0px;
+  top: 0;
+}
+
+.hashi {
+  position: absolute;
+  width: 10%;
+  left: 0em;
+  bottom: 15em;
+  z-index: -1;
+}
+
+.terra {
+  position: absolute;
+  width: 15%;
+  right: 0em;
+  bottom: 0em;
+  z-index: -1;
+}
+
+.arvore {
+  position: absolute;
+  width: 12%;
+  left: 32em;
+  bottom: 0em;
+  z-index: -1;
+}
+
+.vaso{
+  position: absolute;
+  width: 20%;
+  z-index: -1;
+  left: -3%;
+  bottom: 0px;
+}
+
+.arame{
+  position: absolute;
+  width: 20%;
+  z-index: -1;
+  left: -3%;
+  bottom: 0px;
+}
+
+.tesoura-02{
+  position: absolute;
+  width: 15%;
+  z-index: -1;
+  left: -3%;
+  bottom: 0px;
+}
+
+.pos{
+  position: relative;
+}
+
+
 /* GALERIA FOTOS */
 .js-chickendinner {
   width: 100%;
@@ -256,11 +430,6 @@ ul {
 }
 
 /* SECTION  */
-.main-c {
-  margin: 0 auto;
-  max-width: 1024px;
-}
-
 .main {
   margin: 0 auto;
   max-width: 1024px;
@@ -268,6 +437,12 @@ ul {
 
 .space {
   padding: 100 0;
+}
+
+.space-title {
+  padding-top: 100;
+  padding-bottom: 80;
+  text-align:center;
 }
 
 .space-top {
@@ -284,7 +459,7 @@ ul {
 
 /* MENU */
 .logo {
-  width: 200px;
+  width: 140px;
 }
 
 .navbar {
@@ -303,7 +478,9 @@ ul {
 }
 
 .nav-item {
-  padding-left: 25px;
+  padding-left: 20px;
+  font-size: 1em;
+  color: #414042;
 }
 
 .navbar-nav {
@@ -319,6 +496,60 @@ ul {
   color: rgba(41, 40, 42, 1);
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 30;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.97);
+  background-clip: padding-box;
+  border: 0px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 6px 15px 0 rgba(0, 0, 0, 0.07)
+}
+
+.dropdown-item {
+  padding: .25rem 1rem;
+}
+
+.item1 {
+  text-align: left;
+  border-left: 2px solid green;
+}
+
+.item2 {
+  text-align: left;
+  border-left: 2px solid red;
+}
+
+.item3 {
+  text-align: left;
+  border-left: 2px solid blue;
+}
+
+.item4 {
+  text-align: left;
+  border-left: 2px solid yellow;
+}
+
+.item5 {
+  text-align: left;
+  border-left: 2px solid black;
+}
+
+.bg-img {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 10px 10px 0px 0 rgba(241, 242, 242, 1);
+}
+
 /* HERO SECTION  */
 .hero {
   display: flex;
@@ -327,15 +558,21 @@ ul {
 }
 
 .hero-title {
-  flex: 1 1 40%;
-  padding-right: 10px;
+  flex: 1 1 45%;
+  padding-right: 80px;
   padding-top: 12%;
   align-self: stretch;
 }
 
+.hero-title h2 {
+  font-size: 19px;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+
 .hero-img {
   text-align: right;
-  flex: 1 1 60%;
+  flex: 1 1 45%;
 }
 
 .hero-img img {
@@ -358,24 +595,20 @@ ul {
 }
 
 .intro-intro p {
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight: 700;
   text-align: right;
+  font-size: 1.1em
 }
 
 .intro-txt {
   flex: 2;
-  display: flex;
+  /* display: flex; */
 }
 
 .intro-txt p {
-  font-family: 'Roboto Slab', serif;
   font-weight: lighter;
-  font-size: 1em;
-  /* text-align: justify; */
   padding-left: 20px;
-  line-height: 1.7;
+  padding-bottom: 10px;
 }
 
 /* BENEFICIOS SECTION */
@@ -397,6 +630,29 @@ ul {
   align-self: center;
   flex: 1 1 300px;
   margin: 20px 0;
+}
+
+.box-m {
+  max-width: 360px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.box-m h2 {
+  font-size: 2em;
+}
+
+.box-img-2 {
+  order: 2;
+  padding-right: 15px;
+}
+
+.box-img img {
+  width: 100%;
+}
+
+.box-img-2 img {
+  width: 100%;
 }
 
 /* CURSOS SECTION */
@@ -653,6 +909,12 @@ ul {
   padding-bottom: 40px;
 }
 
+.tit-h4{
+  font-size: 1.7em;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
 .skills div {
   margin: 0 10 20;
 }
@@ -726,7 +988,7 @@ ul {
   text-align: center;
 }
 
-.bg-video-workshops {
+.bg-video-oficina {
   background: #085586;
   text-align: center;
 }
@@ -808,8 +1070,7 @@ ul {
 
 .c-cards-items {
   position: relative;
-  width: 290px;
-  margin: 0 10 30px;
+  margin-bottom: 30px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-self: flex-start;
   background-color: white;
@@ -823,25 +1084,24 @@ ul {
   position: absolute;
   z-index: 1;
   left: -5px;
-  top: 50px;
+  top: 10%;
   display: block;
   height: 57px;
 }
 
-.shadow{
+.shadow {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.c-cards-date img{
+.c-cards-date img {
   width: 5px;
   height: 5px;
   text-align:
-
 }
 
 .c-cards-date-day {
   display: block;
-  background-color: #197D36;
+  background-color: black;
   color: #fff;
   text-align: center;
   font-size: 15px;
@@ -854,13 +1114,14 @@ ul {
   font-size: 14px;
   padding: 4px 10px;
   background-color: #fff;
+  text-align: center;
 }
 
 .c-card-content {
   display: flex;
   flex-direction: column;
-  min-height: 195px;
-  margin: 15px 15px;
+  min-height: 230px;
+  padding: 15px 15px;
 }
 
 .c-card-top-1 {
@@ -880,20 +1141,48 @@ ul {
 .c-card-info {
   font-size: 12px;
   font-weight: bold;
+  font-family: 'Raleway';
   color: #C9252C;
-  font-style: italic;
 }
 
 .c-card-title {
   font-size: 17px;
   font-weight: 600;
-  margin-top: 10px;
 }
 
 .c-card-dtl {
   font-size: 14px;
   font-weight: 400;
   flex-grow: 1;
+  font-family: 'Raleway';
+  color: #414042;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.c-cards-modulo {
+  position: absolute;
+  z-index: 1;
+  left: -5px;
+  bottom: 220px;
+  display: block;
+  height: 57px;
+}
+
+.c-cards-modulo img {
+  width: 5px;
+  height: 5px;
+  text-align:
+}
+
+.c-cards-modulo-tipo {
+  display: block;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 4px 10px;
+  text-transform: uppercase;
 }
 
 /* MEDIA QUERY */
@@ -910,22 +1199,49 @@ ul {
     font-size: 2.2em;
   }
 
+  .notepad {
+    top: 150;
+
+  }
   /* INTRO SECTION */
-  .intro-intro p {
+  /* .intro-intro p {
     font-size: 1em;
   }
 
   .intro-txt p {
     font-size: 0.9em;
-  }
-
+  } */
   /* CONVITE SECION */
   .iframe-container {
     padding-bottom: 56.25%;
   }
+
+  /* .c-cards-modulo {
+    top: 155px;
+  } */
 }
 
 @media only screen and (max-width: 768px) {
+  .bt-iniciacao {
+    margin-top: 10px;
+  }
+
+  .bt-escola {
+    margin-top: 10px;
+  }
+
+  .bt-kids {
+    margin-top: 10px;
+  }
+
+  .bt-oficina {
+    margin-top: 10px;
+  }
+
+  .bt-business {
+    margin-top: 10px;
+  }
+
   .space {
     padding: 60 0;
   }
@@ -942,10 +1258,9 @@ ul {
     height: 80px;
   }
 
-  p {
+  /* p {
     font-size: 0.9em;
-  }
-
+  } */
   h1 {
     font-size: 1.9em;
   }
@@ -954,12 +1269,27 @@ ul {
     font-size: 1.2em;
   }
 
-  .bt {
-    margin-top: 10px;
+  p, li {
+    font-size: 1em;
   }
 
-  p, li {
-    font-size: .9em;
+  .hero-title {
+    padding-right: 30px;
+    padding-top: 8%;
+  }
+
+  .hero-title h2 {
+    font-size: 17px;
+    /* padding-top: 5%; */
+  }
+
+  .box-m {
+    max-width: 300px;
+    padding: 0 0;
+  }
+
+  .box-m h2 {
+    font-size: 1.5em;
   }
 
   /* CURSOS SECION */
@@ -975,19 +1305,40 @@ ul {
     height: 120px;
   }
 
+  .notepad{
+    display: none;
+  }
+
   /* EMPRESA SECION */
   .empresas {
     padding-bottom: 60px;
   }
+
 
   /* CONVITE SECION */
   .convite {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .hashi {
+    bottom: 15em;
+  }
+
+  .terra{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  .logo {
+    width: 130px;
+  }
+
+  .main {
+    margin: 0 5%;
+  }
+
   .row {
     margin-right: 0px;
     margin-left: 0px;
@@ -997,6 +1348,11 @@ ul {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 40;
+  }
+
+  .col-sm-6 {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .gray2 {
@@ -1011,6 +1367,10 @@ ul {
     height: 100px;
   }
 
+  .bg-img {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 10px 10px 0px 0 rgba(241, 242, 242, 0);
+  }
+
   /* HERO SECTION */
   .hero {
     display: block;
@@ -1018,6 +1378,8 @@ ul {
 
   .hero-title {
     padding-top: 10px;
+    text-align: center;
+    padding-right: 0;
   }
 
   .hero-img img {
@@ -1032,6 +1394,7 @@ ul {
   /* INTRO SECTION*/
   .intro {
     display: block;
+    text-align: center;
   }
 
   .intro-txt {
@@ -1039,7 +1402,7 @@ ul {
   }
 
   .intro-intro p {
-    text-align: left;
+    text-align: center;
   }
 
   .intro-txt p {
@@ -1055,6 +1418,45 @@ ul {
     padding-left: 0px;
   }
 
+  .box-m {
+    max-width: 100%;
+    padding: 20px 0 0;
+    text-align: center;
+    order: 2
+  }
+
+  .arame {
+    display: none;
+  }
+
+  .alicate {
+    display: none;
+  }
+
+  .galho {
+    display: none;
+  }
+
+  .folha {
+    display: none;
+  }
+
+  .folha-01 {
+    display: none;
+  }
+
+  .folha-02 {
+    display: none;
+  }
+
+  .hashi {
+    display: none;
+  }
+
+  .vaso{
+    display: none;
+  }
+
   /* CURSOS SECTION */
   .cursos {
     padding: 1% 0 15%
@@ -1066,11 +1468,14 @@ ul {
   }
 
   .cursos-card {
-    display: block;
+    margin: 0 20px;
   }
 
   .cursos-desc {
-    padding: 10% 0;
+    padding: 5% 0 7%;
+    text-align: center;
+    flex-basis: auto;
+    order: 2;
   }
 
   .cursos .cursos-card:not(:last-child) {
@@ -1117,16 +1522,26 @@ ul {
     border-right: 0px;
   }
 
+  .class-box-i{
+    min-width: 300px
+  }
+
   .content {
     text-align: center;
     padding-top: 60px;
     border-top: 2px solid white;
-    margin-top: 40px;
+    margin-top: 30px;
+    max-width: 350px;
   }
 
   .class {
     margin: 20px auto 0;
     padding-top: 50px;
     border-top: 2px solid white;
+    max-width: 350;
   }
+
+  /* .c-cards-modulo {
+    top: 185px;
+  } */
 }
