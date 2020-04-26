@@ -155,16 +155,32 @@ ul {
 
 .bt {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   transition: 0.2s;
   margin-top: 15px;
+  background-color: #fff;
 }
 
 .bt:hover {
   background-color: #E5F1D4;
 }
+
+.bt-enviar {
+  display: inline-block;
+  font-size: 1em;
+  border: 1px solid #414042;
+  padding: 6px 15px;
+  transition: 0.2s;
+  margin-top: 6px;
+  background-color: #fff;
+}
+
+.bt-enviar:hover {
+  background-color: #E5F1D4;
+}
+
 
 .bt-iniciacao {
   display: inline-block;
@@ -369,7 +385,7 @@ ul {
   z-index: -1;
 }
 
-.vaso{
+.vaso {
   position: absolute;
   width: 20%;
   z-index: -1;
@@ -377,7 +393,7 @@ ul {
   bottom: 0px;
 }
 
-.arame{
+.arame {
   position: absolute;
   width: 20%;
   z-index: -1;
@@ -385,7 +401,7 @@ ul {
   bottom: 0px;
 }
 
-.tesoura-02{
+.tesoura-02 {
   position: absolute;
   width: 15%;
   z-index: -1;
@@ -393,10 +409,9 @@ ul {
   bottom: 0px;
 }
 
-.pos{
+.pos {
   position: relative;
 }
-
 
 /* GALERIA FOTOS */
 .js-chickendinner {
@@ -442,7 +457,7 @@ ul {
 .space-title {
   padding-top: 100;
   padding-bottom: 80;
-  text-align:center;
+  text-align: center;
 }
 
 .space-top {
@@ -634,8 +649,8 @@ ul {
 
 .box-m {
   max-width: 360px;
-  margin: auto;
-  padding: 20px 0;
+  margin: 0 auto;
+  /* padding: 20px 0; */
 }
 
 .box-m h2 {
@@ -909,7 +924,7 @@ ul {
   padding-bottom: 40px;
 }
 
-.tit-h4{
+.tit-h4 {
   font-size: 1.7em;
   padding-bottom: 60px;
   text-align: center;
@@ -1185,6 +1200,80 @@ ul {
   text-transform: uppercase;
 }
 
+/* CONTATO SECTION */
+.contact-form {
+  width: 70%;
+}
+
+.contact-form .form-control {
+  /* border-radius:1rem; */
+}
+
+input[type=text]:focus {
+  color: #414042;
+  background-color: #E5F1D4;
+  border: 1px solid #fff;
+
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-family: 'Raleway';
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #414042;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #414042;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgb(243,248,235);
+}
+
+.contact-image {
+  text-align: center;
+}
+
+/* .contact-form form{
+    padding: 14%;
+} */
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 1024px) {
   .main {
@@ -1201,24 +1290,22 @@ ul {
 
   .notepad {
     top: 150;
-
-  }
-  /* INTRO SECTION */
-  /* .intro-intro p {
-    font-size: 1em;
   }
 
-  .intro-txt p {
-    font-size: 0.9em;
-  } */
+
   /* CONVITE SECION */
   .iframe-container {
     padding-bottom: 56.25%;
   }
 
-  /* .c-cards-modulo {
-    top: 155px;
-  } */
+  .hashi {
+    position: absolute;
+    width: 10%;
+    left: -1em;
+    bottom: 15em;
+    z-index: -1;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1305,7 +1392,7 @@ ul {
     height: 120px;
   }
 
-  .notepad{
+  .notepad {
     display: none;
   }
 
@@ -1314,7 +1401,6 @@ ul {
     padding-bottom: 60px;
   }
 
-
   /* CONVITE SECION */
   .convite {
     padding-left: 0;
@@ -1322,10 +1408,13 @@ ul {
   }
 
   .hashi {
-    bottom: 15em;
+    bottom: -7em;
+    left: 15em;
+
+
   }
 
-  .terra{
+  .terra {
     display: none;
   }
 }
@@ -1353,6 +1442,10 @@ ul {
   .col-sm-6 {
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .contact-form {
+    width: 90%;
   }
 
   .gray2 {
@@ -1453,7 +1546,7 @@ ul {
     display: none;
   }
 
-  .vaso{
+  .vaso {
     display: none;
   }
 
@@ -1522,7 +1615,7 @@ ul {
     border-right: 0px;
   }
 
-  .class-box-i{
+  .class-box-i {
     min-width: 300px
   }
 
