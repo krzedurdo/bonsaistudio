@@ -7,21 +7,18 @@
   <title>BONSAI STUDIO</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="flickity.css">
-  <!-- <link rel="stylesheet" href="css/flickity2.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/flickity.css">
 
   <!-- GoogleFonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="flickity.pkgd.js"></script>
-  <!-- <script src="flickity-imagesloaded.js"></script> -->
+  <script src="js//jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.pkgd.js"></script>
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -42,8 +39,17 @@
             <li class="nav-item">
               <a href="sobre.html" class="nav-link" href="">Sobre</a>
             </li>
-            <li class="nav-item">
-              <a href="index.html#cursos" class="nav-link" href="">Cursos</a>
+            <li class="nav-item dropdown ">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cursos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item item1" href="iniciacao.html">CURSO DE INICIAÇÃO</a>
+                <a class="dropdown-item item2" href="escola.html">ESCOLA BONSAI STUDIO</a>
+                <a class="dropdown-item item3" href="oficina.html">OFICINA BONSAI STUDIO</a>
+                <a class="dropdown-item item4" href="bonsai_kids.html">BONSAI KIDS</a>
+                <a class="dropdown-item item5" href="business.html">BUSINESS</a>
+              </div>
             </li>
             <li class="nav-item">
               <a href="calendario.html" class="nav-link" href="">Calendário</a>
@@ -52,7 +58,7 @@
               <a class="nav-link" href="">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Contato</a>
+              <a class="nav-link" href="contato.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -65,12 +71,7 @@
     <div>
       <span class="topo-pg-bg" style="background-image: url(images/topo/topo_bonsai_kids.jpg)"></span>
     </div>
-
-    <div class="space-title">
-      <h1>BONSAI KIDS</h1>
-    </div>
-
-    <div class="main space-bottom">
+    <div class="main space">
       <div class="row">
         <div class="box-img-2 col-lg-6 col-md-6 col-sm-6">
           <div class="js-flickity carousel2 bg-img" data-flickity-options='{"wrapAround": true, "autoPlay": true, "imagesLoaded": true}'>
@@ -80,17 +81,17 @@
           </div>
         </div>
         <div class="box-m col-lg-6 col-md-6 col-sm-6">
+          <h2>BONSAI KIDS</h2>
           <p>Multiplicar a experiência do cultivo, responsabilidade e cuidados com a natureza são temas que consideramos relevantes. O curso Bonsai Kids é a maneira que encontramos para demonstrar esses valores para as crianças de uma maneira lúdica e divertida. Tragam seus filhos para conhecer um pouco mais sobre o simples cuidado com o Bonsai e proporcione uma experiência que será levada por eles por uma vida inteira!</p>
           <a class="bt-kids" href="#modulos">confira os módulos disponíveis</a>
         </div>
       </div>
     </div>
     <div class="pos">
-      <img src="images/objetos/crayons.jpg" alt="" class="crayons">
+      <img src="images/objetos/crayons2.jpg" alt="" class="crayons2">
       <img src="images/objetos/tesoura_02.jpg" alt="" class="tesoura-02">
       <img src="images/objetos/arvore.jpg" alt="" class="arvore">
     </div>
-
 
   </section>
 
@@ -98,8 +99,9 @@
     <div class="bg-gray">
       <div class="main space">
         <div>
+          <h4 class="tit-h4">Conteúdo do Curso</h4>
           <div class="row skill">
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/teoria.svg" alt="">
               </div>
@@ -109,7 +111,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/cuidados.svg" alt="">
               </div>
@@ -119,7 +121,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/pratica.svg" alt="">
               </div>
@@ -129,7 +131,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/pravc.svg" alt="">
               </div>
@@ -142,14 +144,17 @@
 
           </div>
           <div class="class">
-            <div class="class-box-main-i">
-              <div class="class-box-i">
+            <div class="class-box-main">
+              <div class="class-box">
                 <h3>AULA ÚNICA</h3>
                 <p>O aluno será instruído e receberá o conhecimento de três formas: Teórica, prática (presencial) e pós curso de forma digital recebendo o resumo do curso e acompanhamento nos 30 dias seguintes. Todo material está incluso e cada aluno
                   fará e levará para casa o seu próprio bonsai!</p>
               </div>
             </div>
             <div class="content">
+              <div class="content-box">
+
+
               <h3>INCLUSO NO MÓDULO MENSAL</h3>
               <ul>
                 <li>– Realização da aula em um Pré-Bonsai de 7 anos.*</li>
@@ -161,6 +166,7 @@
                 <li>– A aquisição d a planta no final do módulo é opcional.</li>
                 <li>* Porte e idade de plantas podem variar conforme espécie (média de 30 a 45 cm)</li>
               </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -179,8 +185,8 @@
     <div class="convite">
       <h2>CALENDÁRIO DE CURSOS</h2>
 
-      <p>Confira datas e locais disponiveis para o Curso de Iniciação mais próximo de você e faça a sua inscrição.</p>
-      <a class="bt" href="calendario.html">calendário</a>
+      <p>Infelizemnte no momento não temos nenhum curso agendado. <br> Fale conosco se quiser levar a Bonsai Studio até você. Podemos organizar um curso para a sua turminha! </p>
+      <a class="bt-kids" href="contato.html">entre em contato</a>
     </div>
   </section>
   <section>

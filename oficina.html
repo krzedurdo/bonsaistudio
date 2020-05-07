@@ -7,21 +7,18 @@
   <title>BONSAI STUDIO</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="flickity.css">
-  <!-- <link rel="stylesheet" href="css/flickity2.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/flickity.css">
 
   <!-- GoogleFonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="flickity.pkgd.js"></script>
-  <!-- <script src="flickity-imagesloaded.js"></script> -->
+  <script src="js//jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickity.pkgd.js"></script>
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -74,11 +71,8 @@
     <div>
       <span class="topo-pg-bg" style="background-image: url(images/topo/topo_oficina.jpg)"></span>
     </div>
-    <div class="space-title">
-      <h1>OFICINA BONSAI STUDIO</h1>
-    </div>
 
-    <div class="main space-bottom">
+    <div class="main space">
       <div class="row">
         <div class="box-img-2 col-lg-6 col-md-6 col-sm-6">
           <div class="js-flickity carousel2 bg-img" data-flickity-options='{"wrapAround": true, "autoPlay": true, "imagesLoaded": true}'>
@@ -88,8 +82,9 @@
           </div>
         </div>
         <div class="box-m col-lg-6 col-md-6 col-sm-6">
-          <p>A Oficina de  Bonsai é feita para você que possui um bonsai e deseja apoio em evoluir sua planta,
-          realizar uma limpeza, estilizá-la, aprimorar o cultivo ou prestar socorro, caso esteja debilitada.</p>
+          <h1>OFICINA <br>BONSAI STUDIO</h1>
+          <p>A Oficina de Bonsai é feita para você que possui um bonsai e deseja apoio em evoluir sua planta,
+            realizar uma limpeza, estilizá-la, aprimorar o cultivo ou prestar socorro, caso esteja debilitada.</p>
           <a class="bt-oficina" href="#contato">entre e contato e agende a sua oficina</a>
         </div>
       </div>
@@ -99,16 +94,15 @@
       <img src="images/objetos/arame.jpg" alt="" class="arame">
       <img src="images/objetos/terra.jpg" alt="" class="terra">
     </div>
-
-
-
   </section>
+
   <section>
     <div class="bg-gray">
       <div class="main space">
         <div>
+          <h4 class="tit-h4">Conteúdo do Curso</h4>
           <div class="row skill">
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/estilizacao.svg" alt="">
               </div>
@@ -118,7 +112,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/arame.svg" alt="">
               </div>
@@ -128,7 +122,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/help.svg" alt="">
               </div>
@@ -138,7 +132,7 @@
               </div>
             </div>
 
-            <div class="skills-card col-lg-3 col-md-6 col-sm-auto">
+            <div class="skills-card col-lg-3 col-md-6 col-sm-8">
               <div class="">
                 <img src="images/icons/vaso.svg" alt="">
               </div>
@@ -147,34 +141,37 @@
                 <p>Plantas para substituição de vasos, renovação de substrato e/ou limpeza de raiz.</p>
               </div>
             </div>
-
-
           </div>
+
           <div class="class">
-            <div class="class-box-main-i">
-              <div class="class-box-i">
+            <div class="class-box-main">
+              <div class="class-box">
                 <h3>AULA ÚNICA</h3>
                 <p>O aluno será instruído e receberá o conhecimento de três formas: Teórica, prática (presencial) e pós curso de forma digital recebendo o resumo do curso e acompanhamento nos 30 dias seguintes. Todo material está incluso e cada aluno
                   fará e levará para casa o seu próprio bonsai!</p>
               </div>
             </div>
+
             <div class="content">
-              <h3>INCLUSO NO MÓDULO MENSAL</h3>
-              <ul>
-                <li>– Realização da aula em um Pré-Bonsai de 7 anos.*</li>
-                <li>– Material teórico aplicado e digital.</li>
-                <li>– Uso ferramentas profissionais durante as aulas.</li>
-                <li>– Substrato específico para a espécie.</li>
-                <li>– Arames para a estilização da planta.</li>
-                <li>– Acompanhamento pós módulo de evolução da planta.</li>
-                <li>– A aquisição d a planta no final do módulo é opcional.</li>
-                <li>* Porte e idade de plantas podem variar conforme espécie (média de 30 a 45 cm)</li>
-              </ul>
+              <div class="content-box">
+                <h3>INCLUSO NO MÓDULO MENSAL</h3>
+                <ul>
+                  <li>– Realização da aula em um Pré-Bonsai de 7 anos.*</li>
+                  <li>– Material teórico aplicado e digital.</li>
+                  <li>– Uso ferramentas profissionais durante as aulas.</li>
+                  <li>– Substrato específico para a espécie.</li>
+                  <li>– Arames para a estilização da planta.</li>
+                  <li>– Acompanhamento pós módulo de evolução da planta.</li>
+                  <li>– A aquisição d a planta no final do módulo é opcional.</li>
+                  <li>* Porte e idade de plantas podem variar conforme espécie (média de 30 a 45 cm)</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
   </section>
+
 
   <section class="bg-video-oficina">
     <div class="main-video">
