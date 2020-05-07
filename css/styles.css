@@ -484,6 +484,7 @@ ul {
   display: block;
   height: 400px;
   margin: 0 10px;
+  max-width: none;
 }
 
 .carousel2 img {
@@ -1647,8 +1648,6 @@ input[type=text]:focus {
   -webkit-transition: opacity .15s ease;
   transition: opacity .15s ease;
   width: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -1737,7 +1736,7 @@ input[type=text]:focus {
   }
   p,
   li {
-    font-size: 1em;
+    font-size: .9em;
   }
   .hero-title {
     padding-right: 30px;
