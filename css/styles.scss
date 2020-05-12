@@ -1,6 +1,3 @@
-/* FONTS CSS font-family: 'Roboto Slab', serif;
-font-family: 'Raleway', sans-serif; */
-
 $cor-cinza-claro: #F1F2F2;
 $cor-amarelo: #F2BE1A;
 $cor-azul: #085586;
@@ -16,10 +13,6 @@ $cor-vermelho: #C9252C;
 img {
   max-width: 100%;
 }
-
-// .row img{
-//    width: 100%;
-//  }
 
 html {
   box-sizing: border-box;
@@ -77,7 +70,7 @@ a:hover {
 p,
 li {
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -91,15 +84,9 @@ ul {
   padding-inline-start: 20px;
 }
 
-/* .col-lg-4 {
-    padding-right: 20px;
-    padding-left: 20px;
-  } */
-
-/* .col-lg-6 {
-    padding-right: 0px;
-  } */
-
+.margin {
+  margin: 0 auto;
+}
 
 
 
@@ -162,16 +149,9 @@ ul {
   margin-bottom: 20px;
 }
 
-/* BUTTONS */
-.test {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  float: left;
-  display: inline-block;
-  margin-top: -100px;
-}
 
+
+/* BUTTONS */
 .bt {
   display: inline-block;
   font-size: 1em;
@@ -202,11 +182,12 @@ ul {
 
 .bt-iniciacao {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
+  text-align: center;
   transition: 0.2s;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .bt-iniciacao:hover {
@@ -217,11 +198,12 @@ ul {
 
 .bt-escola {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
+  text-align: center;
   transition: 0.2s;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .bt-escola:hover {
@@ -232,11 +214,11 @@ ul {
 
 .bt-kids {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .bt-kids:hover {
@@ -247,11 +229,11 @@ ul {
 
 .bt-oficina {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .bt-oficina:hover {
@@ -262,11 +244,12 @@ ul {
 
 .bt-business {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
+  text-align: center;
   transition: 0.2s;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .bt-business:hover {
@@ -280,27 +263,29 @@ ul {
   border: 1px solid $cor-vermelho;
   color: white;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   margin-top: 5px;
   padding: 4px 15px 4px;
   transition: 0.2s;
   margin-top: 10px;
+  min-width: 78px;
 }
 
 .bt-preco-escola:hover {
-  background-color: rgba(181, 25, 30, 1);
-  border: 1px solid rgba(181, 25, 30, 1);
+  background-color: $cor-vermelho;
+  border: 1px solid $cor-vermelho;
   color: white;
 }
 
 .bt-preco-online {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   background-color: $cor-preto;
   color: white;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  min-width: 78px;
 }
 
 .bt-preco-online:hover {
@@ -311,7 +296,7 @@ ul {
 
 .bt-preco2 {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   color: $cor-preto;
   border: 1px solid $cor-preto;
   padding: 4px 15px 4px;
@@ -320,12 +305,13 @@ ul {
 
 .bt-preco-iniciacao {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1em;
   background-color: $cor-verde2;
   color: white;
   border: 1px solid $cor-verde2;
   padding: 4px 15px 4px;
   transition: 0.2s;
+  min-width: 78px;
 }
 
 .bt-preco-iniciacao:hover {
@@ -344,8 +330,8 @@ ul {
 .alicate {
   position: absolute;
   bottom: 0em;
-  width: 20%;
-  left: 20%;
+  width: 24%;
+  left: 15%;
 }
 
 .crayons {
@@ -463,6 +449,10 @@ ul {
   position: relative;
 }
 
+.estilo {
+  font-size: .7em;
+}
+
 /* GALERIA FOTOS */
 .js-chickendinner {
   width: 100%;
@@ -487,11 +477,11 @@ ul {
   display: block;
   height: 400px;
   margin: 0 10px;
+  max-width: none;
 }
 
 .carousel2 img {
   display: block;
-  weight: 100%;
 }
 
 /* SECTION  */
@@ -519,7 +509,7 @@ ul {
 }
 
 .space-p {
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 /* MENU */
@@ -548,9 +538,9 @@ ul {
   color: $cor-preto;
 }
 
-.navbar-nav {
-  /* background-color: $cor-cinza-claro; */
-}
+// .navbar-nav {
+//   background-color: $cor-cinza-claro; 
+// }
 
 .nav-link {
   text-transform: uppercase;
@@ -675,6 +665,8 @@ ul {
   padding-bottom: 10px;
 }
 
+
+
 /* BENEFICIOS SECTION */
 .benefits {
   display: flex;
@@ -697,19 +689,22 @@ ul {
 }
 
 .box-m {
-  max-width: 375px;
+  max-width: 400px;
   margin: 0 auto;
   /* padding: 20px 0; */
 }
 
 .box-m h2 {
   font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .box-img-2 {
   order: 2;
   padding-right: 15px;
 }
+
+
 
 .box-img img {
   width: 100%;
@@ -734,6 +729,11 @@ ul {
   flex-wrap: wrap;
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+  margin: 0 auto;
+}
+
+.cursos {
+  margin: 0 auto;
 }
 
 .cursos .cursos-card:not(:last-child) {
@@ -795,8 +795,7 @@ ul {
 /* SECION CONVITE */
 .convite {
   text-align: center;
-  padding-left: 9%;
-  padding-right: 9%;
+  padding: 0 10%;
 }
 
 .convite a {
@@ -869,6 +868,10 @@ ul {
 
 .sobre-img-2 {
   text-align: right;
+}
+
+.space-sobre {
+  padding-bottom: 30px;
 }
 
 .team {
@@ -973,8 +976,16 @@ ul {
 }
 
 .tit-h4 {
-  font-size: 1.7em;
+  font-size: 1.5em;
+  font-weight: 900;
   padding-bottom: 60px;
+  text-align: center;
+}
+
+.tit2-h4 {
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -982,9 +993,13 @@ ul {
   margin: 0 10px 20px;
 }
 
-.skill {
-  border-bottom: 2px solid white;
+#iniciacao .skill {
+  border-bottom: none;
 }
+
+// .skill {
+//    border-bottom: 2px solid white;
+// }
 
 .skill img {
   max-width: 50px;
@@ -996,6 +1011,9 @@ ul {
 
 .skills-card {
   display: flex;
+}
+
+.skills-card {
   margin-bottom: 60px;
 }
 
@@ -1141,6 +1159,23 @@ ul {
 
 }
 
+.c-cards-desc {
+  position: relative;
+  min-width: 310px;
+  margin: 30px auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: flex-start;
+  background-color: white;
+  width: 95%;
+}
+
+.c-cards-desc .c-card-content {
+  margin: 0 10px;
+
+  h4 {
+    margin-top: 10px;
+  }
+}
 
 .c-cards-date {
   position: absolute;
@@ -1195,6 +1230,32 @@ ul {
 
 .c-card-top-ip {
   background-color: $cor-verde2;
+  align-self: center;
+  height: 45px;
+  color: white;
+  display: flex;
+
+  h4 {
+    flex: 5;
+    align-self: center;
+    padding-left: 15px;
+
+    color: white;
+  }
+
+  img {
+    height: 100%;
+    width: 10px;
+    flex: 1;
+    text-align: center;
+    // padding-left: 8px;
+    border-left: 3px solid white;
+    margin-right: 0px;
+  }
+}
+
+.c-card-top-ep {
+  background-color: $cor-vermelho;
   align-self: center;
   height: 45px;
   color: white;
@@ -1304,7 +1365,6 @@ ul {
   margin-top: 10px;
 }
 
-.div-btn {}
 
 .c-cards-modulo {
   position: absolute;
@@ -1340,9 +1400,9 @@ ul {
   margin: 0 auto;
 }
 
-.contact-form .form-control {
-  /* border-radius:1rem; */
-}
+// .contact-form .form-control {
+//   /border-radius:1rem;
+// }
 
 input[type=text]:focus {
   color: $cor-preto;
@@ -1497,17 +1557,59 @@ input[type=text]:focus {
 
 
 // SLIDER COURSES
+.carousel-escola {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: $cor-vermelho;
+  }
+}
+
+// .carousel-control-next2:focus,
+// .carousel-control-next2:hover,
+// .carousel-control-prev2:focus,
+// .carousel-control-prev2:hover {
+//   color: #fff;
+//   text-decoration: none;
+//   outline: 0;
+//   opacity: 1;
+// }
+
+// .carousel-control-prev2 {
+//   left: 0;
+// }
+
+// .carousel-control-next2 {
+//   right: 0;
+// }
+
+.carousel-item-next2,
+.carousel-item-prev2,
+.carousel-item.active {
+  display: block;
+}
+
 
 .carousel-control-next,
 .carousel-control-prev {
   background-color: $cor-verde2;
   opacity: 1;
   transition: opacity .15s ease;
-  width: 20px;
-  margin-left: -20px;
+  width: 30px;
+  // margin-left: -20px;
   // margin-right: -20px;
-  // margin-top: 30px;
+  margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 1;
 }
 
 .container-fluid,
@@ -1519,7 +1621,24 @@ input[type=text]:focus {
   padding-right: 0px;
 }
 
+.container-fluid {
+  .col-lg-4 {
+    padding-right: 15px;
+    padding-left: 7.5px;
+  }
+}
+
+.w-100 {
+  width: 95% !important;
+}
+
+.container-fluid .col-lg-4 {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
 @media only screen and (max-width: 1024px) {
+
   .main {
     margin: 0 3%;
   }
@@ -1536,10 +1655,6 @@ input[type=text]:focus {
     top: 150px;
   }
 
-  .alicate {
-    width: 20%;
-    left: 15%;
-  }
 
   /* CONVITE SECION */
   .iframe-container {
@@ -1548,9 +1663,9 @@ input[type=text]:focus {
 
   .hashi {
     position: absolute;
-    width: 10%;
-    left: -1em;
-    bottom: 15em;
+    width: 12%;
+    left: 15em;
+    bottom: -7em;
     z-index: -1;
   }
 
@@ -1568,24 +1683,28 @@ input[type=text]:focus {
 }
 
 @media only screen and (max-width: 770px) {
+  .bt {
+    font-size: .9em;
+  }
+
   .bt-iniciacao {
-    margin-top: 10px;
+    font-size: .9em;
   }
 
   .bt-escola {
-    margin-top: 10px;
+    font-size: .9em;
   }
 
   .bt-kids {
-    margin-top: 10px;
+    font-size: .9em;
   }
 
   .bt-oficina {
-    margin-top: 10px;
+    font-size: .9em;
   }
 
   .bt-business {
-    margin-top: 10px;
+    font-size: .9em;
   }
 
   .space {
@@ -1614,7 +1733,7 @@ input[type=text]:focus {
 
   p,
   li {
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .hero-title {
@@ -1659,17 +1778,11 @@ input[type=text]:focus {
 
   /* CONVITE SECION */
   .convite {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .hashi {
-    bottom: -7em;
-    left: 15em;
+    padding: 0 10%;
   }
 
   .alicate {
-    width: 18%;
+    width: 24%;
   }
 
   .terra {
@@ -1680,6 +1793,11 @@ input[type=text]:focus {
     display: none;
   }
 
+  .col-md-4 {
+    // padding-left: 0px;
+    // padding-right: 0px;
+    padding-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1702,12 +1820,22 @@ input[type=text]:focus {
   .crayons2 {
     display: none;
   }
+
+
+  .container-fluid {
+    .col-lg-4 {
+      padding-right: 7px;
+      padding-left: 7px;
+    }
+  }
+
+  .txt-align {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  // .c-cards-items {
-  //   margin: 0 22%;
-  // }
+
 
   .skills-card {
     margin-left: auto;
@@ -1717,26 +1845,70 @@ input[type=text]:focus {
   .post-sidebar {
     display: none;
   }
+
+  .col-md-6 {
+    padding-bottom: 30px;
+  }
+
+  .c-cards-items-desc {
+    width: 70%;
+  }
+
+  .c-cards-items {
+    margin: 30px auto 0px;
+  }
+
+  .c-cards-desc {
+    width: 80%;
+  }
 }
 
+
 @media only screen and (max-width: 650px) {
-  // .c-cards-items {
-  //   margin: 0 17%;
-  // }
 
   .bg-img {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 10px 10px 0px 0 rgba(241, 242, 242, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 10px 10px 0px 0 rgba(241, 242, 242, 1);
   }
+
+  .hero-title {
+    h1 {
+      font-size: 1.3em;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+  }
+
 
   .box-m {
     max-width: 100%;
-    padding: 20px;
+    padding: 20px 20px 40px;
+    order: 1
+  }
+
+  .cursos-card {
     text-align: center;
-    order: 2
+    max-width: 420px;
+  }
+
+  .cursos-desc {
+    margin: 7% 4%;
+    order: 2;
+  }
+
+  .cursos-img {
+    flex: auto;
+    max-width: 100%;
   }
 
   .col-sm-6 {
     max-width: 100%;
+  }
+
+  .hero-title {
+    padding-right: 30px;
+    padding-top: 3%;
   }
 
   .content {
@@ -1746,6 +1918,15 @@ input[type=text]:focus {
     border-top: 2px solid white;
     margin-top: 30px;
     max-width: 100%;
+  }
+
+  .desc-curos-card {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .desc-cursos-img {
+    padding-top: 30px;
   }
 
   .skill {
@@ -1772,15 +1953,53 @@ input[type=text]:focus {
   .tesoura {
     display: none;
   }
+
+  .folha {
+    display: none;
+  }
+
+  .folha-01 {
+    display: none;
+  }
+
+  .folha-02 {
+    display: none;
+  }
+
+  .folha-03 {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+  .box-m {
+    max-width: 100%;
+    padding: 20px 20px 40px;
+    text-align: center;
+    order: 1
+  }
+
+  .box-img {
+    order: 2;
+  }
+
+  #aprender .space {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+
+
   .logo {
     width: 130px;
   }
 
   .c-cards-items {
     margin: 30px 20px;
+    margin-bottom: 0px;
+
   }
 
   .main {
@@ -1792,6 +2011,32 @@ input[type=text]:focus {
     margin-left: 0px;
   }
 
+  .c-cards-desc {
+    width: 100%;
+  }
+
+  .cursos-desc {
+    .bt-iniciacao {
+      margin-top: 15px;
+    }
+
+    .bt-escola {
+      margin-top: 15px;
+    }
+
+    .bt-kids {
+      margin-top: 15px;
+    }
+
+    .bt-oficina {
+      margin-top: 15px;
+    }
+
+    .bt-business {
+      margin-top: 15px;
+    }
+  }
+
   .col-sm-auto {
     width: 80%;
     margin: 0 auto;
@@ -1801,6 +2046,22 @@ input[type=text]:focus {
   .col-sm-6 {
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .space-sobre {
+    padding-bottom: 40px;
+  }
+
+  .container-fluid {
+    .col-lg-4 {
+      padding-right: 20px;
+      padding-left: 7px;
+    }
+  }
+
+  /* CONVITE SECION */
+  .convite {
+    padding: 0px;
   }
 
   .contact-form {
@@ -1868,29 +2129,14 @@ input[type=text]:focus {
 
   .box-m {
     max-width: 100%;
-    padding: 20px 0 0;
     text-align: center;
-    order: 2
   }
-
 
   .arame {
     display: none;
   }
 
 
-
-  .folha {
-    display: none;
-  }
-
-  .folha-01 {
-    display: none;
-  }
-
-  .folha-02 {
-    display: none;
-  }
 
   /* CURSOS SECTION */
   .cursos {
@@ -1910,11 +2156,23 @@ input[type=text]:focus {
     padding: 5% 0 7%;
     text-align: center;
     flex-basis: auto;
-    order: 2;
+
   }
 
   .cursos .cursos-card:not(:last-child) {
     margin-bottom: 60px;
+  }
+
+  .bt-iniciacao {
+    font-size: .8em;
+  }
+
+  .bt-escola {
+    font-size: .8em;
+  }
+
+  .bt-business {
+    font-size: .8em;
   }
 
   /* EMPRESA SECTION */
@@ -1961,10 +2219,9 @@ input[type=text]:focus {
     // padding-bottom: 20px;
   }
 
-  .col-md-4 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 20px;
-  }
 
+
+  .col-sm-12 {
+    padding-bottom: 40px;
+  }
 }
