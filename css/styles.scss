@@ -29,6 +29,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 li,
 a {
@@ -56,6 +57,12 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 2px;
+}
+
+h5 {
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  font-weight: 900;
 }
 
 a {
@@ -259,21 +266,36 @@ ul {
 }
 
 .bt-preco-escola {
-  background-color: $cor-vermelho;
-  border: 1px solid $cor-vermelho;
-  color: white;
   display: inline-block;
   font-size: 1em;
-  margin-top: 5px;
+  background-color: $cor-vermelho;
+  color: white;
+  border: 1px solid $cor-vermelho;
   padding: 4px 15px 4px;
   transition: 0.2s;
-  margin-top: 10px;
   min-width: 78px;
 }
 
 .bt-preco-escola:hover {
   background-color: $cor-vermelho;
   border: 1px solid $cor-vermelho;
+  color: white;
+}
+
+.bt-preco-oficina {
+  display: inline-block;
+  font-size: 1em;
+  background-color: $cor-azul;
+  color: white;
+  border: 1px solid $cor-azul;
+  padding: 4px 15px 4px;
+  transition: 0.2s;
+  min-width: 78px;
+}
+
+.bt-preco-oficina:hover {
+  background-color: $cor-azul;
+  border: 1px solid $cor-azul;
   color: white;
 }
 
@@ -395,6 +417,15 @@ ul {
   width: 11%;
   left: 0px;
   top: 0;
+  display: none;
+}
+
+.notepad2 {
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  left: 0;
+  z-index: -1;
 }
 
 .hashi {
@@ -431,7 +462,7 @@ ul {
 
 .arame {
   position: absolute;
-  width: 18%;
+  width: 24%;
   z-index: -1;
   left: -3%;
   bottom: 0px;
@@ -1009,15 +1040,25 @@ ul {
   font-size: .9em
 }
 
-.skills-card {
-  display: flex;
+.skills-card2 p {
+  font-size: .9em
 }
 
 .skills-card {
+  display: flex;
   margin-bottom: 60px;
 }
 
+.skills-card2 {
+  display: flex;
+}
+
 .skills-card img {
+  fill: $cor-verde2;
+  width: 50px;
+}
+
+.skills-card2 img {
   fill: $cor-verde2;
   width: 50px;
 }
@@ -1306,6 +1347,32 @@ ul {
   }
 }
 
+.c-card-top-of {
+  background-color: $cor-azul;
+  align-self: center;
+  height: 45px;
+  color: white;
+  display: flex;
+
+  h4 {
+    flex: 5;
+    align-self: center;
+    padding-left: 15px;
+
+    color: white;
+  }
+
+  img {
+    height: 100%;
+    width: 10px;
+    flex: 1;
+    text-align: center;
+    // padding-left: 8px;
+    border-left: 3px solid white;
+    margin-right: 0px;
+  }
+}
+
 .c-card-info {
   font-size: 12px;
   font-weight: bold;
@@ -1565,6 +1632,14 @@ input[type=text]:focus {
   }
 }
 
+.carousel-oficina {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: $cor-azul;
+  }
+}
+
 // .carousel-control-next2:focus,
 // .carousel-control-next2:hover,
 // .carousel-control-prev2:focus,
@@ -1649,10 +1724,6 @@ input[type=text]:focus {
 
   h1 {
     font-size: 2.2em;
-  }
-
-  .notepad {
-    top: 150px;
   }
 
 
@@ -1832,6 +1903,11 @@ input[type=text]:focus {
   .txt-align {
     text-align: center;
   }
+
+  .notepad2 {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
