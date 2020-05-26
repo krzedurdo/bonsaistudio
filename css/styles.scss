@@ -38,7 +38,7 @@ a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 900;
 }
 
@@ -72,6 +72,10 @@ a {
 a:hover {
   text-decoration: none;
   color: #28211F;
+}
+
+p {
+  padding-bottom: 10px;
 }
 
 p,
@@ -657,12 +661,13 @@ ul {
 }
 
 .hero-img {
-  text-align: right;
+  text-align: center;
   flex: 1 1 45%;
 }
 
 .hero-img img {
-  width: 100%;
+  width: auto;
+
 }
 
 /* INTRO SECTION*/
@@ -836,6 +841,7 @@ ul {
 /* FOOTER */
 .bg-gray2 {
   background-color: $cor-preto;
+  padding: 40px;
 }
 
 .social-footer {
@@ -851,6 +857,79 @@ ul {
 .social-footer img {
   width: 30px;
   margin: 20px 20px;
+}
+
+// _____________________________________________
+
+.logo-f {
+  width: 160px;
+
+
+}
+
+.sitemap {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  h6 {
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: .8em;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin: 0;
+    line-height: 1.3;
+
+    li {
+      color: #fff;
+      font-size: .85em;
+
+      a {
+        color: #fff;
+      }
+
+      a:hover {
+        color: #fff;
+        text-decoration: underline;
+
+      }
+    }
+  }
+
+}
+
+
+.contato-f {
+  width: 210px;
+  margin-left: auto;
+
+  .contato-detalhes {}
+
+  .redes-sociais {
+    margin-top: 15px;
+
+    img {
+      width: 15px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.sitemap-f {
+  margin-left: auto;
+  width: 210;
+  padding-bottom: 30px;
+}
+
+.blog-f {
+  margin-left: auto;
+
 }
 
 /* --------------------------------------------------
@@ -1046,7 +1125,6 @@ ul {
 
 .skills-card {
   display: flex;
-  margin-bottom: 60px;
 }
 
 .skills-card2 {
@@ -1130,6 +1208,14 @@ ul {
   max-width: 1024px;
 }
 
+.lista-oficina {
+  ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    padding-inline-start: 0px;
+  }
+}
+
 .iframe-container {
   position: relative;
   text-align: center;
@@ -1203,7 +1289,7 @@ ul {
 .c-cards-desc {
   position: relative;
   min-width: 310px;
-  margin: 30px auto;
+  margin: 0 auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-self: flex-start;
   background-color: white;
@@ -1753,6 +1839,20 @@ input[type=text]:focus {
   }
 }
 
+
+
+@media only screen and (max-width: 991px) {
+  .skills-card:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.blog-f {
+  margin-left: auto;
+  width: 210px;
+}
+
+
 @media only screen and (max-width: 770px) {
   .bt {
     font-size: .9em;
@@ -1908,23 +2008,31 @@ input[type=text]:focus {
     display: none;
   }
 
+  .sitemap-f {
+    padding-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
 
+  .col-md-6 {
+    padding-bottom: 30px;
+  }
 
   .skills-card {
     margin-left: auto;
     margin-right: auto;
   }
 
+  .skills-card.col-md-6 {
+    padding-bottom: 0px;
+  }
+
   .post-sidebar {
     display: none;
   }
 
-  .col-md-6 {
-    padding-bottom: 30px;
-  }
+
 
   .c-cards-items-desc {
     width: 70%;
@@ -1938,6 +2046,7 @@ input[type=text]:focus {
     width: 80%;
   }
 }
+
 
 
 @media only screen and (max-width: 650px) {
@@ -2063,7 +2172,35 @@ input[type=text]:focus {
   #aprender .space {
     padding-top: 0px;
   }
+
+  .logo-f {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .contato-f {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sitemap-f {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .blog-f {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fix-f {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
+
+
+
 
 @media only screen and (max-width: 425px) {
 
