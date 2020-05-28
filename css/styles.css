@@ -75,7 +75,7 @@ p {
 
 p,
 li {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1em;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -165,6 +165,7 @@ ul {
   transition: 0.2s;
   margin-top: 15px;
   background-color: #fff;
+  font-weight: 500;
 }
 
 .bt:hover {
@@ -180,6 +181,7 @@ ul {
   transition: 0.2s;
   margin-top: 6px;
   background-color: #fff;
+  font-weight: 500;
 }
 
 .bt-enviar:hover {
@@ -195,17 +197,20 @@ ul {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin-top: 15px;
+  font-weight: 500;
 }
 
 .bt-iniciacao:hover {
   color: white;
   background-color: #197D36;
   border: 1px solid #197D36;
+  font-weight: 500;
 }
 
 .bt-escola {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   text-align: center;
@@ -223,6 +228,7 @@ ul {
 .bt-kids {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   -webkit-transition: 0.2s;
@@ -239,6 +245,7 @@ ul {
 .bt-oficina {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   -webkit-transition: 0.2s;
@@ -255,6 +262,7 @@ ul {
 .bt-business {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
   text-align: center;
@@ -272,6 +280,7 @@ ul {
 .bt-preco-escola {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   background-color: #C9252C;
   color: white;
   border: 1px solid #C9252C;
@@ -290,6 +299,7 @@ ul {
 .bt-preco-oficina {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   background-color: #085586;
   color: white;
   border: 1px solid #085586;
@@ -308,6 +318,7 @@ ul {
 .bt-preco-online {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   background-color: #414042;
   color: white;
   border: 1px solid #414042;
@@ -326,6 +337,7 @@ ul {
 .bt-preco2 {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   color: #414042;
   border: 1px solid #414042;
   padding: 4px 15px 4px;
@@ -335,6 +347,7 @@ ul {
 .bt-preco-iniciacao {
   display: inline-block;
   font-size: 1em;
+  font-weight: 500;
   background-color: #197D36;
   color: white;
   border: 1px solid #197D36;
@@ -352,7 +365,7 @@ ul {
 
 .tesoura {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   width: 17%;
   right: 0px;
 }
@@ -398,7 +411,7 @@ ul {
 
 .folha-01 {
   position: absolute;
-  top: 60%;
+  top: 75%;
   width: 12%;
   right: 20%;
   z-index: 100;
@@ -609,7 +622,7 @@ ul {
 }
 
 .dropdown-item {
-  padding: .25rem 1rem;
+  padding: .3rem 1rem .1rem;
 }
 
 .item1 {
@@ -666,8 +679,8 @@ ul {
 }
 
 .hero-title h2 {
-  font-size: 19px;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.2em;
   font-weight: 600;
 }
 
@@ -716,7 +729,6 @@ ul {
 }
 
 .intro-txt p {
-  font-weight: lighter;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -1923,7 +1935,7 @@ input[type=text]:focus {
     height: 110px;
   }
   h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   /* CONVITE SECION */
   .iframe-container {
@@ -1948,35 +1960,59 @@ input[type=text]:focus {
 }
 
 @media only screen and (max-width: 991px) {
+  .hero-title h1 {
+    font-size: 1.5em;
+  }
+  .hero-title h2 {
+    font-size: 1em;
+  }
   .skills-card:not(:last-child) {
     margin-bottom: 60px;
   }
-}
-
-.blog-f {
-  margin-left: auto;
-  width: 210px;
+  .dropdown-menu {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    border: 0px solid rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.02), 0 0 0 0 rgba(0, 0, 0, 0.07);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.02), 0 0 0 0 rgba(0, 0, 0, 0.07);
+  }
+  .item1 {
+    text-align: right;
+    border-left: 0px;
+    border-right: 2px solid green;
+  }
+  .item2 {
+    text-align: right;
+    border-left: 0px;
+    border-right: 2px solid red;
+  }
+  .item3 {
+    text-align: right;
+    border-left: 0px;
+    border-right: 2px solid blue;
+  }
+  .item4 {
+    text-align: right;
+    border-left: 0px;
+    border-right: 2px solid yellow;
+  }
+  .item5 {
+    text-align: right;
+    border-left: 0px;
+    border-right: 2px solid black;
+  }
+  .blog-f {
+    margin-left: auto;
+    width: 210px;
+  }
+  .tesoura {
+    width: 15%;
+  }
 }
 
 @media only screen and (max-width: 770px) {
-  .bt {
-    font-size: .9em;
-  }
-  .bt-iniciacao {
-    font-size: .9em;
-  }
-  .bt-escola {
-    font-size: .9em;
-  }
-  .bt-kids {
-    font-size: .9em;
-  }
-  .bt-oficina {
-    font-size: .9em;
-  }
-  .bt-business {
-    font-size: .9em;
-  }
   .space {
     padding: 60px 0;
   }
@@ -1990,21 +2026,14 @@ input[type=text]:focus {
     height: 80px;
   }
   h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
   h2 {
     font-size: 1.2em;
   }
-  p,
-  li {
-    font-size: .9em;
-  }
   .hero-title {
     padding-right: 30px;
     padding-top: 8%;
-  }
-  .hero-title h2 {
-    font-size: 17px;
   }
   .box-m {
     max-width: 300px;
@@ -2064,6 +2093,10 @@ input[type=text]:focus {
     padding-right: 0;
     margin-left: 0;
     margin-bottom: 20px;
+  }
+  .intro-intro p {
+    line-height: 1.2;
+    font-size: 1.1em;
   }
   .crayons2 {
     display: none;
@@ -2359,22 +2392,13 @@ input[type=text]:focus {
     margin: 0 20px;
   }
   .cursos-desc {
-    padding: 5% 0 7%;
+    padding: 5% 0 5%;
     text-align: center;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
   .cursos .cursos-card:not(:last-child) {
     margin-bottom: 60px;
-  }
-  .bt-iniciacao {
-    font-size: .8em;
-  }
-  .bt-escola {
-    font-size: .8em;
-  }
-  .bt-business {
-    font-size: .8em;
   }
   /* EMPRESA SECTION */
   .empresa {
